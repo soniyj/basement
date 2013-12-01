@@ -1,8 +1,13 @@
-/*======================================================================
-Designed & Written By 		: Marco Matascioli
-
-weeknum.c                   : 11/10/13
-======================================================================*/
+/**
+ * How to convert a week number into a C tm's struct
+ * 
+ * @author:      Marco "soniyj" Matascioli
+ * @date:        11 October 2013
+ * @file:        weeknum.c
+ * 
+ * Copyright (C) 2013. Marco "soniyj" Matascioli
+ * This code is released under the term of the GPL v2.
+ */
 
 #include <stdio.h>
 #include <string.h>

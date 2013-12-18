@@ -47,12 +47,19 @@ Test* change5(Test* m) {
     return m;
 }
 
+Test* change6(int x) {
+    Test *m = new Test();
+    m->x = x;
+    return m;
+}
+
 int main() {
     Test m1;
     Test *m2;
     Test m3;
     Test *m4;
     Test *m5;
+	Test *m6;
 
     m2 = new Test();
     m4 = new Test();
@@ -70,12 +77,14 @@ int main() {
 
     /* Object created here */
     m5 = change5(m5);
+	m6 = change6(6);
 
     cout << "After 1: " << m1.x << endl;
     cout << "After 2: " << m2->x << endl;
     cout << "After 3: " << m3.x << endl;
     cout << "After 4: " << m4->x << endl;
     cout << "After 5: " << m5->x << endl;
+	cout << "After 6: " << m6->x << endl;
     cout << "\n";
     
     return 0;

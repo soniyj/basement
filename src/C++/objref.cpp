@@ -60,7 +60,7 @@ int main() {
     Test *m4;
     Test *m5;
     Test *m6;
-    S
+    
     m2 = new Test();
     m4 = new Test();
 

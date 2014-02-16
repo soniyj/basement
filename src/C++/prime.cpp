@@ -1,7 +1,6 @@
 /**
- * Get how many prime numbers there are into a range [k...j].
- * 
- * 
+ * Get how many prime numbers there are into a range [k...j]
+ *  
  * @author:      Marco "soniyj" Matascioli
  * @date:        15 February 2014
  * @file:        prime.cpp
@@ -11,6 +10,7 @@
  */
  
 #include <cstdlib>
+#include <cstdio>
 #include <cmath>
 #include <iostream>
 #include <algorithm>
@@ -18,6 +18,7 @@
 
 using namespace std;
 
+/* Recursive */
 bool recursive(int n, int kn) {
     if(kn < 2)
         return true;
@@ -28,6 +29,7 @@ bool recursive(int n, int kn) {
             return recursive(n,kn-1);
 }
 
+/* Iterative */
 bool iterative(int n, int kn) {
     bool p = true;
     for(int i=kn; i>=2; i--) {
@@ -42,26 +44,39 @@ int main(int argc, char **argv) {
     
     cout << "Insert two numbers where the second is bigger than the first one\n";
     cout<<"1): ";
-    cin >> k;
-    cout<<"2): ";
     cin >> j;
+    cout<<"2): ";
+    cin >> k;
     
     /* Checking input */
-    k=abs(k);
     j=abs(j);
-    if(k>=j) {
+    k=abs(k);
+    if(j>=k) {
         cout << "Error: second number must be bigger than the first number\n";
         return 1;
     }
     
     cout << "Choose 1 for recursive (default) and 2 for iterative: ";
     cin >> r;
+    if(r==2)
+#define R 2
+        cout << "lullo\n";
     
+#if r>=1
+#define R 3
+#endif
+    
+    cout << "aa " << R << endl;
     /* Find prime numbers */
-    for(int i=k; i<=j; i++) {
+    for(int i=j; i<=k; i++) {
         radi=sqrt(i);
-        //if(primo(i,radi)) {
-        if(second(i,radi)) {
+#ifndef R
+        if(recursive(i,radi)) {
+            cout << "Recursive\n";
+#else
+        if(iterative(i,radi)) {
+            cout << "Iterative\n";
+#endif
             cout << "\t" << i << " is prime" << endl;
             tot++;
         }
@@ -69,6 +84,10 @@ int main(int argc, char **argv) {
             cout << " " << i << " is not prime" << endl; 
     }
     
-    cout << "\n";
-    cout << "\nSono stati trovati " << tot << " numeri primi nell'intervallo assegnato " << k << " - " << j <<endl;
+    printf("\nThere are %d into the range [%d..%d]\n", tot, j, k);
+        
+    cout << "Press Enter to end";
+    cin >> r;
+    
+    return 0;
 }

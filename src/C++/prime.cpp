@@ -1,5 +1,5 @@
 /**
- * Get how many prime numbers there are into a range [k...j]
+ * Get how many prime numbers there are into the range [k...j]
  *  
  * @author:      Marco "soniyj" Matascioli
  * @date:        15 February 2014
@@ -15,6 +15,13 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+
+unsigned static short r=1;
+
+/* Define a general function to be used by a user's choice */
+#define REC(X,Y) (recursive(X,Y))
+#define ITR(X,Y) (iterative(X,Y))
+#define FUNC(X,Y) (r==2 ? (ITR(X,Y)) : (REC(X,Y)))
 
 using namespace std;
 
@@ -39,7 +46,7 @@ bool iterative(int n, int kn) {
 }
 
 int main(int argc, char **argv) {
-    unsigned int k,j,r=1,tot=0;
+    unsigned int k,j,tot=0;
     int radi;
     
     cout << "Insert two numbers where the second is bigger than the first one\n";
@@ -58,25 +65,12 @@ int main(int argc, char **argv) {
     
     cout << "Choose 1 for recursive (default) and 2 for iterative: ";
     cin >> r;
-    if(r==2)
-#define R 2
-        cout << "lullo\n";
     
-#if r>=1
-#define R 3
-#endif
-    
-    cout << "aa " << R << endl;
     /* Find prime numbers */
     for(int i=j; i<=k; i++) {
         radi=sqrt(i);
-#ifndef R
-        if(recursive(i,radi)) {
-            cout << "Recursive\n";
-#else
-        if(iterative(i,radi)) {
-            cout << "Iterative\n";
-#endif
+
+        if(FUNC(i,radi)) {
             cout << "\t" << i << " is prime" << endl;
             tot++;
         }
@@ -84,9 +78,9 @@ int main(int argc, char **argv) {
             cout << " " << i << " is not prime" << endl; 
     }
     
-    printf("\nThere are %d into the range [%d..%d]\n", tot, j, k);
+    printf("\nThere are %d prime numbers into the range [%d..%d]\n", tot, j, k);
         
-    cout << "Press Enter to end";
+    cout << "Press <e> + <return> to end\n";
     cin >> r;
     
     return 0;

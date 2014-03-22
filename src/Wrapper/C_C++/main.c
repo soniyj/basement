@@ -1,6 +1,5 @@
 /**
- * This program will show how to use C++ functions
- * thru a C program
+ * This program will show how to use C++ functions thru a C program
  *
  * @author:      Marco "soniyj" Matascioli
  * @date:        September 2013
@@ -36,7 +35,7 @@ int main() {
 	map_get(Map, 2);
 	printf("\n");
 
-	printf("Map pointer to function operation\n");
+	printf("Map function pointer operation\n");
 	map_put_func(MapF, "Marco", &f);
 	map_get_func(MapF, "Marco");
 	printf("\n");

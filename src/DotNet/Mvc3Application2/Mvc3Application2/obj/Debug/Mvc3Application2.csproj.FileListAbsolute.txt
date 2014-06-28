@@ -1,0 +1,7 @@
+C:\Users\soniyj\Documents\Visual Studio 2010\Projects\Mvc3Application2\Mvc3Application2\bin\Mvc3Application2.dll
+C:\Users\soniyj\Documents\Visual Studio 2010\Projects\Mvc3Application2\Mvc3Application2\bin\Mvc3Application2.pdb
+C:\Users\soniyj\Documents\Visual Studio 2010\Projects\Mvc3Application2\Mvc3Application2\bin\EntityFramework.dll
+C:\Users\soniyj\Documents\Visual Studio 2010\Projects\Mvc3Application2\Mvc3Application2\bin\EntityFramework.xml
+C:\Users\soniyj\Documents\Visual Studio 2010\Projects\Mvc3Application2\Mvc3Application2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\soniyj\Documents\Visual Studio 2010\Projects\Mvc3Application2\Mvc3Application2\obj\Debug\Mvc3Application2.dll
+C:\Users\soniyj\Documents\Visual Studio 2010\Projects\Mvc3Application2\Mvc3Application2\obj\Debug\Mvc3Application2.pdb

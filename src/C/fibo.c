@@ -11,8 +11,8 @@ void fibo_1(int n) {
     if(i <= 1)
       next = i;
     else {
-      next = first + second;
-      first = second;
+      next   = first + second;
+      first  = second;
       second = next;
     }
     printf("%d\n", next);
@@ -26,11 +26,22 @@ void fibo_2(int n) {
   printf("%d\n", second);
   
   for(i = 2 ; i < n ; i++) {
-    next = first + second;
-    first = second;
+    next   = first + second;
+    first  = second;
     second = next;
     printf("%d\n", next);
   }     
+}
+
+void fibo_3(int n) {
+  int i, a=0, b=1, t=1;
+
+  for(i = 0; i < n; i++) {
+    t = a+b;
+    a = b;
+    b = t;
+    printf("%d\n",a);
+  }
 }
 
 int main() {
@@ -46,6 +57,8 @@ int main() {
     printf("\n");
     fibo_2(n);
   }
+  printf("\n");
+  fibo_3(n);
 
   return 0;
 }

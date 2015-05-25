@@ -1,4 +1,6 @@
 basement
 ========
 
-This repository contains the source code that is not related with a real project
+This is a repository for different kind of code base and experiments.
+
+Check each directory for more information.

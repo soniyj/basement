@@ -2,9 +2,9 @@
 
 ### dagtest Project
 
-The project contains an example of a Directed Acyclic Graph, It is treated as a tree with n-nodes.
+The project contains an example of a Directed Acyclic Graph, it is treated as a tree with n-nodes.
 
-All ID nodes are string of numbers.
+All ID nodes are string of numbers, in the form, Ancestor.Parent.Node.
 
 It's possible to create a Graph(width,depth), where width represents the number of children.
 

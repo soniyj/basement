@@ -1,0 +1,24 @@
+application: applied-dialect-95310
+version: 1
+runtime: python27
+threadsafe: yes
+api_version: 1
+
+handlers:
+- url: /js
+  static_dir: static/js
+- url: /css
+  static_dir: static/css
+- url: /
+  static_files: templates/index.html
+  upload: templates/index\.html
+
+# Endpoints handler: this must be /_ah/spi for Endpoints, NOT /_ah/api!
+- url: /_ah/spi/.*
+  script: helloworld_api.APPLICATION
+
+libraries:
+- name: pycrypto
+  version: latest
+- name: endpoints
+  version: 1.0

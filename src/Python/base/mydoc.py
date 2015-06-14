@@ -4,11 +4,11 @@
 # (#)     : it's a simple comment, won't be used into doc
 # ("",'') : can be comments and can be used for making the document
 #
-# Doc convention: double quote string class and function, single quote method and other
+# Doc convention: double quote string and multi-lines class and function, single quote method and other
 #
 # How to use python code documentation
 # help(class | function) -> returns all information available
-# CLASS.__doc__          -> information about the Class
+# CLASS.__doc__          -> information about the Class (no methods are shown)
 # FUNC.__doc__           -> information about the Function
 # CLASS.__init__.__doc__ -> info for an built-in method
 # CLASS.method.__doc__   -> info for a user-defined method

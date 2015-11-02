@@ -27,7 +27,7 @@ Tests and experiments using this game engine.
 
 ### How to Play ###
 
-The game has one Scene, you will see it at the beginning og the game, your goal is try to catch
+The game has one Scene, you will see it at the beginning of the game, your goal is try to catch
 as much Coins as you can.
 
 You can restart the game when no more Coins are shown:

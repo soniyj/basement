@@ -1,0 +1,250 @@
+[[package]]
+name = "atomicwrites"
+version = "1.4.0"
+description = "Atomic file writes."
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[[package]]
+name = "attrs"
+version = "20.3.0"
+description = "Classes Without Boilerplate"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.extras]
+dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface", "furo", "sphinx", "pre-commit"]
+docs = ["furo", "sphinx", "zope.interface"]
+tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface"]
+tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six"]
+
+[[package]]
+name = "cassandra-driver"
+version = "3.24.0"
+description = "DataStax Driver for Apache Cassandra"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+futures = "*"
+geomet = ">=0.1,<0.3"
+six = ">=1.9"
+
+[package.extras]
+graph = ["gremlinpython (==3.4.6)"]
+
+[[package]]
+name = "click"
+version = "7.1.2"
+description = "Composable command line interface toolkit"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
+name = "colorama"
+version = "0.4.4"
+description = "Cross-platform colored terminal text."
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
+name = "futures"
+version = "3.1.1"
+description = "Backport of the concurrent.futures package from Python 3.2"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "geomet"
+version = "0.2.1.post1"
+description = "GeoJSON <-> WKT/WKB conversion utilities"
+category = "main"
+optional = false
+python-versions = ">2.6, !=3.3.*, <4"
+
+[package.dependencies]
+click = "*"
+six = "*"
+
+[[package]]
+name = "more-itertools"
+version = "8.6.0"
+description = "More routines for operating on iterables, beyond itertools"
+category = "dev"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
+name = "packaging"
+version = "20.8"
+description = "Core utilities for Python packages"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.dependencies]
+pyparsing = ">=2.0.2"
+
+[[package]]
+name = "pluggy"
+version = "0.13.1"
+description = "plugin and hook calling mechanisms for python"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.extras]
+dev = ["pre-commit", "tox"]
+
+[[package]]
+name = "py"
+version = "1.10.0"
+description = "library with cross-python path, ini-parsing, io, code, log facilities"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[[package]]
+name = "pyparsing"
+version = "2.4.7"
+description = "Python parsing module"
+category = "dev"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "pytest"
+version = "5.4.3"
+description = "pytest: simple powerful testing with Python"
+category = "dev"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+atomicwrites = {version = ">=1.0", markers = "sys_platform == \"win32\""}
+attrs = ">=17.4.0"
+colorama = {version = "*", markers = "sys_platform == \"win32\""}
+more-itertools = ">=4.0.0"
+packaging = "*"
+pluggy = ">=0.12,<1.0"
+py = ">=1.5.0"
+wcwidth = "*"
+
+[package.extras]
+checkqa-mypy = ["mypy (==v0.761)"]
+testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xmlschema"]
+
+[[package]]
+name = "six"
+version = "1.15.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "wcwidth"
+version = "0.2.5"
+description = "Measures the displayed width of unicode strings in a terminal"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "81ecff5a607c501a4d768ba24b7ddab221ab36402803bf07b00b99fa2e40f96f"
+
+[metadata.files]
+atomicwrites = [
+    {file = "atomicwrites-1.4.0-py2.py3-none-any.whl", hash = "sha256:6d1784dea7c0c8d4a5172b6c620f40b6e4cbfdf96d783691f2e1302a7b88e197"},
+    {file = "atomicwrites-1.4.0.tar.gz", hash = "sha256:ae70396ad1a434f9c7046fd2dd196fc04b12f9e91ffb859164193be8b6168a7a"},
+]
+attrs = [
+    {file = "attrs-20.3.0-py2.py3-none-any.whl", hash = "sha256:31b2eced602aa8423c2aea9c76a724617ed67cf9513173fd3a4f03e3a929c7e6"},
+    {file = "attrs-20.3.0.tar.gz", hash = "sha256:832aa3cde19744e49938b91fea06d69ecb9e649c93ba974535d08ad92164f700"},
+]
+cassandra-driver = [
+    {file = "cassandra-driver-3.24.0.tar.gz", hash = "sha256:83ec8d9a5827ee44bb1c0601a63696a8a9086beaf0151c8255556299246081bd"},
+    {file = "cassandra_driver-3.24.0-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:110a89f41b3a7cfe92aef67119464a6af9a86c14fa018ff0bb3b152942331f7c"},
+    {file = "cassandra_driver-3.24.0-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:b48a710eadf6e1ea33489522fdd1fd9f2e23bb4408ee9139205f3f8072ab4e78"},
+    {file = "cassandra_driver-3.24.0-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:7526443f02b85652a8654be466730fab8052883103536cc94085c8593b7162a9"},
+    {file = "cassandra_driver-3.24.0-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:a4a56292ab4bed0bedaf5d3e88aa6c38bc130ef65bed12774a2ab62d01087f3e"},
+    {file = "cassandra_driver-3.24.0-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:a74ee7e047f73ddbab10546d6c6733836096611b88c8b416c9969895f88c512b"},
+    {file = "cassandra_driver-3.24.0-cp35-cp35m-macosx_10_6_intel.whl", hash = "sha256:4e228e3951150e7905fe1363e2dbe61940d8a34df208764452044934d8ce061f"},
+    {file = "cassandra_driver-3.24.0-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:8024490895f48f78be06bad5ebec1b2d6adb658f5e3d5f67d9b4c8669cf391f2"},
+    {file = "cassandra_driver-3.24.0-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:970900e1d181f99ac6560ada02969c04d24d21bce1419c7daaf154d5c892ab3f"},
+    {file = "cassandra_driver-3.24.0-cp35-cp35m-win32.whl", hash = "sha256:e7d641dca1fdbf239bc3edbeb6bae63eb50382eee50567334dd62aecdd7cf4b4"},
+    {file = "cassandra_driver-3.24.0-cp35-cp35m-win_amd64.whl", hash = "sha256:81a1355b2edd08f81ef1577c9fc51812e12d309f9b0a7ebeddecceb0dc2d0b86"},
+    {file = "cassandra_driver-3.24.0-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:ea1ffe18b40f7323cc57270fc8e4c680c0af39b1d2108b0aa624895d435808e6"},
+    {file = "cassandra_driver-3.24.0-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:3d1287cfa1ebf439646d31808b19d784884d8f717fce2e7728130e9ab8ff9ccd"},
+    {file = "cassandra_driver-3.24.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:2ccbfdbf168fbb5e0055f2161790de12c280840881cb3fb7893848af1e4d9c07"},
+    {file = "cassandra_driver-3.24.0-cp36-cp36m-win32.whl", hash = "sha256:59e06084ce3079b1bc69e3de3e22a07a722d984f8b51fc0a98e98112bfbba9b8"},
+    {file = "cassandra_driver-3.24.0-cp36-cp36m-win_amd64.whl", hash = "sha256:def8803132d5ec801333ebaa46edd8c0f28e56fefdb41acf0a1fad9e1c72bfcd"},
+    {file = "cassandra_driver-3.24.0-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:97f7668636a48282d0e65eeb914d04fd1280c2304de004bed1ea4de5c9c42212"},
+    {file = "cassandra_driver-3.24.0-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:590ca23f6ca6996ea454d7531d74ea526c90c6734842f62cd190a7d24c8a1bff"},
+    {file = "cassandra_driver-3.24.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:f90699c8f1aa4eb58bf84be0fbff859ba094799b662592d1c20237c7cade702e"},
+    {file = "cassandra_driver-3.24.0-cp37-cp37m-win32.whl", hash = "sha256:f0f95cdbaba88d57a0529eb67b83536279a0ec02f1b51bc27a73c1eb3aaabe07"},
+    {file = "cassandra_driver-3.24.0-cp37-cp37m-win_amd64.whl", hash = "sha256:d1d302abc500a3ddfc1922f9914c843d4c57c87f5480f0b226e8f2806a2281ab"},
+    {file = "cassandra_driver-3.24.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:1e793f4545b53353c3df5daafb44ce2b4479aad1aebb0dd4989490283716aff7"},
+    {file = "cassandra_driver-3.24.0-cp38-cp38-manylinux1_i686.whl", hash = "sha256:64b1386a18940e70462fe564e1e056891ded8c4a812d9dc8ad21a500f959de1d"},
+    {file = "cassandra_driver-3.24.0-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:51d43208dec31f59a4c038b105cc43c9ebb86a9172970079556918208472e77c"},
+    {file = "cassandra_driver-3.24.0-cp38-cp38-win32.whl", hash = "sha256:cf132f0d170ec1afc90780349275e7932f64d603492652f29fd9a4082d5f2ae6"},
+    {file = "cassandra_driver-3.24.0-cp38-cp38-win_amd64.whl", hash = "sha256:c76ff976df5975d4444c330d52ea17324e7f33e35a6366b8a8286e5102bacdd8"},
+]
+click = [
+    {file = "click-7.1.2-py2.py3-none-any.whl", hash = "sha256:dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc"},
+    {file = "click-7.1.2.tar.gz", hash = "sha256:d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"},
+]
+colorama = [
+    {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
+    {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
+]
+futures = [
+    {file = "futures-3.1.1-py2-none-any.whl", hash = "sha256:c4884a65654a7c45435063e14ae85280eb1f111d94e542396717ba9828c4337f"},
+    {file = "futures-3.1.1-py3-none-any.whl", hash = "sha256:3a44f286998ae64f0cc083682fcfec16c406134a81a589a5de445d7bb7c2751b"},
+    {file = "futures-3.1.1.tar.gz", hash = "sha256:51ecb45f0add83c806c68e4b06106f90db260585b25ef2abfcda0bd95c0132fd"},
+]
+geomet = [
+    {file = "geomet-0.2.1.post1-py3-none-any.whl", hash = "sha256:a41a1e336b381416d6cbed7f1745c848e91defaa4d4c1bdc1312732e46ffad2b"},
+    {file = "geomet-0.2.1.post1-py3.6.egg", hash = "sha256:87ae0fc42e532b9e98969c0bbf895a5e0b2bb4f6f775cf51a74e6482f1f35c2b"},
+    {file = "geomet-0.2.1.post1.tar.gz", hash = "sha256:91d754f7c298cbfcabd3befdb69c641c27fe75e808b27aa55028605761d17e95"},
+]
+more-itertools = [
+    {file = "more-itertools-8.6.0.tar.gz", hash = "sha256:b3a9005928e5bed54076e6e549c792b306fddfe72b2d1d22dd63d42d5d3899cf"},
+    {file = "more_itertools-8.6.0-py3-none-any.whl", hash = "sha256:8e1a2a43b2f2727425f2b5839587ae37093f19153dc26c0927d1048ff6557330"},
+]
+packaging = [
+    {file = "packaging-20.8-py2.py3-none-any.whl", hash = "sha256:24e0da08660a87484d1602c30bb4902d74816b6985b93de36926f5bc95741858"},
+    {file = "packaging-20.8.tar.gz", hash = "sha256:78598185a7008a470d64526a8059de9aaa449238f280fc9eb6b13ba6c4109093"},
+]
+pluggy = [
+    {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
+    {file = "pluggy-0.13.1.tar.gz", hash = "sha256:15b2acde666561e1298d71b523007ed7364de07029219b604cf808bfa1c765b0"},
+]
+py = [
+    {file = "py-1.10.0-py2.py3-none-any.whl", hash = "sha256:3b80836aa6d1feeaa108e046da6423ab8f6ceda6468545ae8d02d9d58d18818a"},
+    {file = "py-1.10.0.tar.gz", hash = "sha256:21b81bda15b66ef5e1a777a21c4dcd9c20ad3efd0b3f817e7a809035269e1bd3"},
+]
+pyparsing = [
+    {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
+    {file = "pyparsing-2.4.7.tar.gz", hash = "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"},
+]
+pytest = [
+    {file = "pytest-5.4.3-py3-none-any.whl", hash = "sha256:5c0db86b698e8f170ba4582a492248919255fcd4c79b1ee64ace34301fb589a1"},
+    {file = "pytest-5.4.3.tar.gz", hash = "sha256:7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8"},
+]
+six = [
+    {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
+    {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
+]
+wcwidth = [
+    {file = "wcwidth-0.2.5-py2.py3-none-any.whl", hash = "sha256:beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784"},
+    {file = "wcwidth-0.2.5.tar.gz", hash = "sha256:c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"},
+]

@@ -11,3 +11,5 @@
 ### Directory ###
 
 * base -> contains all tests done using the fundamental of python
+* cassandra -> example of using cassandra driver
+* rethinkdb -> example of using rethinkdb

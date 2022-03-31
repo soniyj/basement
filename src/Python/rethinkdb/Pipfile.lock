@@ -1,0 +1,36 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "9ea748204b91cb6b62d667eea8cec4766aab2cd8f5be3f2fc8bc949ce693bad2"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.7"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "rethinkdb": {
+            "hashes": [
+                "sha256:4eb4252b498af3f5d01e07d7870eb35f78b96bccc45812d313c14c5184789d74",
+                "sha256:5246296cef72d4bf05a10dafe4111bd916240bcc28215168fe3be81b21eae590"
+            ],
+            "index": "pypi",
+            "version": "==2.4.6"
+        },
+        "six": {
+            "hashes": [
+                "sha256:236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a",
+                "sha256:8f3cd2e254d8f793e7f3d6d9df77b92252b52637291d0f0da013c76ea2724b6c"
+            ],
+            "version": "==1.14.0"
+        }
+    },
+    "develop": {}
+}
